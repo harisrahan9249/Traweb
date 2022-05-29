@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Events registration page</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="header_nav">
+            <h1 class="header_h1">SouthTripe</h1>
+            <ul class="header_nav_ul">
+                <li class="header_nav_ul_item"><a class="header_nav_ul_item_link" href="">Home</a></li>
+                <li class="header_nav_ul_item"><a class="header_nav_ul_item_link" href="">About</a></li>
+                <li class="header_nav_ul_item"><a class="header_nav_ul_item_link" href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- <button id="myBtn">Open Modal</button> -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal__card">
+                    <div class="event_modal">
+                        <h1 class="event_modal_name"></h1>
+                        <img class="event_modal_img" src="" alt="">
+                        <p class="event_modal_disc"></p>
+                    </div>
+
+                    <div class="inputs_modal">
+                        <input class="input_name" type="text" placeholder="First Name" name="firstname">
+                        <input class="input_lastname" type="text" placeholder="Last Name" name="lastname">
+                        <input class="input_email" type="email" placeholder="E-Mail" name="email">
+                        <input class="input_tel" type="tel" placeholder="Phone Number" name="phone">
+                        <input type="checkbox" name="agree" id="agree" value="yes" />
+                        <label for="agree">I'm old enough to participate</label>
+                        
+                        <button class="btn_register">Register</button>
+                        <p class="modal-error-text">Error 🚫</p>
+                        <p class="modal-success-text">Registered ✅</p>
+
+                    </div>
+                </div>
+                <div class="p-3">
+                  <form onsubmit="return validateForm(this)" action="" method="post">
+                    <div>
+                  
+                    </div>
+                    </div>
+                      
+                    </form>
+                  </div>`
+            </div>
+
+
+        </div>
+      
+    </main>
+    <div class="events">
+        <!-- <img src="" alt="" class="event_img">
+        <h1 class="event_name"></h1>
+        <p class="event_description"></p>
+        <button class="event_reg_button">Register</button> -->
+    </div>
+    <div class="main_additional_events"></div>
+    
+    
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

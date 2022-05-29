@@ -1,0 +1,258 @@
+$nav-bg: #eee;
+$text-color: #555;
+$text-light-color: #777;
+$font: 'PT Sans Narrow';
+//$max-width: 1200px;
+
+html {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // font-family: 'Alegreya Sans', sans-serif;
+}
+
+*,
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font, sans-serif;
+    //background-color: $text-color;
+    margin: 0 auto;
+    padding: 0;
+    // max-width: $max-width;
+    background: #2C3039;
+   
+    
+    
+   
+
+   
+     
+     
+     
+   
+   
+    
+
+}
+header{
+    background-image: url('/img/conifers-1850227_1280.jpg');
+    background-repeat:no-repeat;
+    height: 100vh;
+    background-position: center;
+   
+  
+  /* background-image: url('https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_960_720.jpg');*/
+
+}
+
+.header_nav {
+    
+    
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+
+    &_h1 {
+        padding: 0.5em;
+        color: #FEDBD1;
+        
+            
+        
+            
+        
+
+    }
+
+
+
+    &_ul {
+        padding: 0.5em;
+        display: flex;
+        //min-width: 40%;
+        justify-content: space-between;
+        list-style: none;
+        padding: .5em;
+
+
+        // @media (max-width:720px) {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: flex-start;
+        // }
+
+        &_item {
+            padding: 0.5em;
+
+            &_link {
+                text-decoration: none;
+                color: $text-color;
+                font-size: 1.2em;
+                padding: 2em;
+                //text-transform: uppercase;
+
+                &:hover {
+                    //content: attr(data-item);
+                    color: #eec7b7;
+                    font-size: bold;
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+.events {
+    background: #eec7b7;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.event_image,
+.event_modal_img {
+    color: #596353;
+    width: 400px;
+    border-radius: 8px;
+
+  &__name {
+    color: #eec7b7;
+
+}
+}
+.event_card {
+    margin: 1rem 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #0a091e;
+    border-radius: 8px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    //background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    background: #ACBFC5;
+}
+
+.modal-content {
+    background:#596353;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inputs_modal {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 2rem;
+  
+}
+
+.inputs_modal input {
+    margin: 5px;
+    width: 20rem;
+
+
+
+}
+
+.modal-error-text {
+    display: none;
+    color: red;
+}
+
+.modal-success-text {
+    display: none;
+    color: green;
+}
+
+// font-family: 'PT Sans Narrow', sans-serif;
+
+//form style
+
+.login_container{
+    
+    display: flex;
+    
+}
+.hide-section{
+    opacity: 0;
+}
+.hide-form{
+    padding: 0%;
+    padding-top: 27px;
+}
+.login-hide{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+}
+label{
+    font-size: 12px;
+    
+}
+.event_name{
+    color: #eec7b7;
+}
+.event_about{
+    color: #eec7b7;
+}
+.event_reg_button{
+    background: #8a436a;
+    color: #041d54;
+}
+    
